@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import path from "path";
 
 const nextConfig: NextConfig = {
   output: 'export',
@@ -7,7 +8,8 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   turbopack: {
-    root: '.',
+    // Turbopack expects an absolute path for `root`.
+    root: path.resolve(__dirname),
   },
 };
 
