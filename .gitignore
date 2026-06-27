@@ -39,3 +39,24 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# IDEs
+.vscode/
+.idea/
+
+# caches
+.cache/
+.parcel-cache/
+.cache-loader
+.eslintcache
+.next/cache
+
+# build artifacts
+dist/
+
+# local envs (explicit)
+.env.local
+.env.*.local
+
+# editor history
+.history
